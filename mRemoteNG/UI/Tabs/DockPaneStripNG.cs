@@ -2,10 +2,8 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Security.Permissions;
 using System.Windows.Forms;
 using mRemoteNG.Connection;
-using mRemoteNG.Properties;
 using WeifenLuo.WinFormsUI.Docking;
 using mRemoteNG.Resources.Language;
 using System.Runtime.Versioning;

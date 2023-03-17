@@ -34,7 +34,6 @@
 
 using System;
 using System.Collections;
-using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using mRemoteNGTests.TestHelpers;

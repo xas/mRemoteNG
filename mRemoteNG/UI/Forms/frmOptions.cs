@@ -32,7 +32,7 @@ namespace mRemoteNG.UI.Forms
             Cursor.Current = Cursors.WaitCursor;
             Application.DoEvents();
             InitializeComponent();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.Settings_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.Settings_16x);
             _pageName = pageName;
             Cursor.Current = Cursors.Default;
 
@@ -214,7 +214,7 @@ namespace mRemoteNG.UI.Forms
         private object ImageGetter(object rowobject)
         {
             OptionsPage page = rowobject as OptionsPage;
-            return page?.PageIcon == null ? _display.ScaleImage(Properties.Resources.F1Help_16x) : _display.ScaleImage(page.PageIcon);
+            return page?.PageIcon == null ? _display.ScaleImage(Resources.Properties.Resources.F1Help_16x) : _display.ScaleImage(page.PageIcon);
         }
 
         public void SetActivatedPage(string pageName = default)

@@ -18,7 +18,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
         {
             InitializeComponent();
             ApplyTheme();
-            PageIcon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.ASPWebSite_16x);
+            PageIcon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.ASPWebSite_16x);
         }
 
         public override string PageName

@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Xml;
-using mRemoteNG.Themes;
 
 namespace mRemoteNG.Themes
 {

@@ -9,7 +9,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
-using mRemoteNG.Properties;
 using mRemoteNG.Resources.Language;
 using System.IO;
 using System.Runtime.Versioning;

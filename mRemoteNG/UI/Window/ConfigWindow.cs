@@ -11,7 +11,6 @@ using mRemoteNG.Container;
 using mRemoteNG.Messages;
 using mRemoteNG.Properties;
 using mRemoteNG.Themes;
-using mRemoteNG.Tree.Root;
 using mRemoteNG.UI.Controls.ConnectionInfoPropertyGrid;
 using WeifenLuo.WinFormsUI.Docking;
 using mRemoteNG.Resources.Language;
@@ -131,7 +130,7 @@ namespace mRemoteNG.UI.Window
             //btnShowInheritance
             //
             _btnShowInheritance.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            _btnShowInheritance.Image = Properties.Resources.Schema_16x;
+            _btnShowInheritance.Image = Resources.Properties.Resources.Schema_16x;
             _btnShowInheritance.ImageTransparentColor = Color.Magenta;
             _btnShowInheritance.Name = "_btnShowInheritance";
             _btnShowInheritance.Size = new Size(23, 22);
@@ -140,7 +139,7 @@ namespace mRemoteNG.UI.Window
             //btnShowDefaultInheritance
             //
             _btnShowDefaultInheritance.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            _btnShowDefaultInheritance.Image = Properties.Resources.ViewDownBySchema_16x;
+            _btnShowDefaultInheritance.Image = Resources.Properties.Resources.ViewDownBySchema_16x;
             _btnShowDefaultInheritance.ImageTransparentColor = Color.Magenta;
             _btnShowDefaultInheritance.Name = "_btnShowDefaultInheritance";
             _btnShowDefaultInheritance.Size = new Size(23, 22);
@@ -151,7 +150,7 @@ namespace mRemoteNG.UI.Window
             _btnShowProperties.Checked = true;
             _btnShowProperties.CheckState = CheckState.Checked;
             _btnShowProperties.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            _btnShowProperties.Image = Properties.Resources.Property_16x;
+            _btnShowProperties.Image = Resources.Properties.Resources.Property_16x;
             _btnShowProperties.ImageTransparentColor = Color.Magenta;
             _btnShowProperties.Name = "_btnShowProperties";
             _btnShowProperties.Size = new Size(23, 22);
@@ -160,7 +159,7 @@ namespace mRemoteNG.UI.Window
             //btnShowDefaultProperties
             //
             _btnShowDefaultProperties.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            _btnShowDefaultProperties.Image = Properties.Resources.ExtendedProperty_16x;
+            _btnShowDefaultProperties.Image = Resources.Properties.Resources.ExtendedProperty_16x;
             _btnShowDefaultProperties.ImageTransparentColor = Color.Magenta;
             _btnShowDefaultProperties.Name = "_btnShowDefaultProperties";
             _btnShowDefaultProperties.Size = new Size(23, 22);
@@ -179,7 +178,7 @@ namespace mRemoteNG.UI.Window
             //
             _btnHostStatus.Alignment = ToolStripItemAlignment.Right;
             _btnHostStatus.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            _btnHostStatus.Image = Properties.Resources.HostStatus_Check;
+            _btnHostStatus.Image = Resources.Properties.Resources.HostStatus_Check;
             _btnHostStatus.ImageTransparentColor = Color.Magenta;
             _btnHostStatus.Name = "_btnHostStatus";
             _btnHostStatus.Size = new Size(23, 22);
@@ -237,7 +236,7 @@ namespace mRemoteNG.UI.Window
             WindowType = WindowType.Config;
             DockPnl = panel;
             InitializeComponent();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.Settings_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.Settings_16x);
             ApplyLanguage();
         }
 
@@ -599,7 +598,7 @@ namespace mRemoteNG.UI.Window
         {
             if (string.IsNullOrEmpty(hostName as string))
             {
-                ShowStatusImage(Properties.Resources.HostStatus_Off);
+                ShowStatusImage(Resources.Properties.Resources.HostStatus_Off);
                 return;
             }
 
@@ -611,18 +610,18 @@ namespace mRemoteNG.UI.Window
                 if (pReply?.Status == IPStatus.Success)
                 {
                     if ((string)_btnHostStatus.Tag == "checking")
-                        ShowStatusImage(Properties.Resources.HostStatus_On);
+                        ShowStatusImage(Resources.Properties.Resources.HostStatus_On);
                 }
                 else
                 {
                     if ((string)_btnHostStatus.Tag == "checking")
-                        ShowStatusImage(Properties.Resources.HostStatus_Off);
+                        ShowStatusImage(Resources.Properties.Resources.HostStatus_Off);
                 }
             }
             catch (Exception)
             {
                 if ((string)_btnHostStatus.Tag == "checking")
-                    ShowStatusImage(Properties.Resources.HostStatus_Off);
+                    ShowStatusImage(Resources.Properties.Resources.HostStatus_Off);
             }
         }
 
@@ -646,7 +645,7 @@ namespace mRemoteNG.UI.Window
         {
             try
             {
-                _btnHostStatus.Image = Properties.Resources.HostStatus_Check;
+                _btnHostStatus.Image = Resources.Properties.Resources.HostStatus_Check;
                 // To check status, ConnectionInfo must be an mRemoteNG.Connection.Info that is not a container
                 if (!(connectionInfo is ConnectionInfo info)) return;
                 if (info.IsContainer) return;

@@ -5,7 +5,6 @@ using mRemoteNG.App;
 using mRemoteNG.App.Info;
 using mRemoteNG.Config.Putty;
 using mRemoteNG.Connection.Protocol;
-using mRemoteNG.Properties;
 using mRemoteNG.Tools;
 using mRemoteNG.Resources.Language;
 using System.Runtime.Versioning;
@@ -19,9 +18,9 @@ namespace mRemoteNG.UI.Forms.OptionsPages
         {
             InitializeComponent();
             ApplyTheme();
-            PageIcon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.Settings_16x);
+            PageIcon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.Settings_16x);
             var display = new DisplayProperties();
-            var img = display.ScaleImage(Properties.Resources.PuttyConfig);
+            var img = display.ScaleImage(Resources.Properties.Resources.PuttyConfig);
             btnLaunchPutty.Image = img;
         }
 

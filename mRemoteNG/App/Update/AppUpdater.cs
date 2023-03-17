@@ -7,7 +7,6 @@ using mRemoteNG.App.Info;
 using mRemoteNG.Security.SymmetricEncryption;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
-using mRemoteNG.Properties;
 using System.Runtime.Versioning;
 #if !PORTABLE
 using mRemoteNG.Tools;

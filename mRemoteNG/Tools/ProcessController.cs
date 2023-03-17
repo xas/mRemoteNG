@@ -3,7 +3,6 @@ using System;
 using System.Diagnostics;
 using System.Text;
 using mRemoteNG.App;
-using mRemoteNG.Properties;
 using mRemoteNG.Tools.Cmdline;
 using System.Runtime.Versioning;
 

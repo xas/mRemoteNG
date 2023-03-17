@@ -5,7 +5,6 @@ using System.Threading;
 using System.Windows.Forms;
 using mRemoteNG.App;
 using mRemoteNG.Messages;
-using mRemoteNG.Properties;
 using mRemoteNG.Tools;
 using mRemoteNG.Resources.Language;
 using System.Runtime.Versioning;

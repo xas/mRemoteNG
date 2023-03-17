@@ -4,7 +4,6 @@ using mRemoteNG.Themes;
 using System.Linq;
 using System.Collections.Generic;
 using BrightIdeasSoftware;
-using mRemoteNG.Properties;
 using mRemoteNG.UI.TaskDialog;
 using mRemoteNG.Resources.Language;
 using System.Runtime.Versioning;
@@ -25,7 +24,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
         public ThemePage()
         {
             InitializeComponent();
-            PageIcon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.AppearanceEditor_16x);
+            PageIcon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.AppearanceEditor_16x);
             _themeManager = ThemeManager.getInstance();
             if (!_themeManager.ThemingActive) return;
             _themeManager = ThemeManager.getInstance();

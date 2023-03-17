@@ -97,7 +97,7 @@ namespace mRemoteNG.UI.Controls
             // btnQuickConnect
             // 
             _btnQuickConnect.DropDown = _mnuQuickConnectProtocol;
-            _btnQuickConnect.Image = Properties.Resources.Run_16x;
+            _btnQuickConnect.Image = Resources.Properties.Resources.Run_16x;
             _btnQuickConnect.ImageTransparentColor = Color.Magenta;
             _btnQuickConnect.Margin = new Padding(0, 1, 3, 2);
             _btnQuickConnect.Name = "btnQuickConnect";
@@ -118,7 +118,7 @@ namespace mRemoteNG.UI.Controls
             // 
             _btnConnections.DisplayStyle = ToolStripItemDisplayStyle.Image;
             _btnConnections.DropDown = _mnuConnections;
-            _btnConnections.Image = Properties.Resources.ASPWebSite_16x;
+            _btnConnections.Image = Resources.Properties.Resources.ASPWebSite_16x;
             _btnConnections.ImageScaling = ToolStripItemImageScaling.SizeToFit;
             _btnConnections.ImageTransparentColor = Color.Magenta;
             _btnConnections.Name = "btnConnections";
@@ -249,7 +249,7 @@ namespace mRemoteNG.UI.Controls
                                                                                  .ConnectionTreeModel).ToArray();
             _btnConnections.DropDownItems.AddRange(rootMenuItems);
 
-            ToolStripMenuItem favorites = new ToolStripMenuItem(Language.Favorites, Properties.Resources.Favorite_16x);
+            ToolStripMenuItem favorites = new ToolStripMenuItem(Language.Favorites, Resources.Properties.Resources.Favorite_16x);
             var rootNodes = Runtime.ConnectionsService.ConnectionTreeModel.RootNodes;
             List<ToolStripMenuItem> favoritesList = new List<ToolStripMenuItem>();
 
@@ -261,7 +261,7 @@ namespace mRemoteNG.UI.Controls
                     {
                         Text = containerInfo.Name,
                         Tag = containerInfo,
-                        Image = containerInfo.OpenConnections.Count > 0 ? Properties.Resources.Run_16x : Properties.Resources.Stop_16x
+                        Image = containerInfo.OpenConnections.Count > 0 ? Resources.Properties.Resources.Run_16x : Resources.Properties.Resources.Stop_16x
                     };
                     favoriteMenuItem.MouseUp += ConnectionsMenuItem_MouseUp;
                     favoritesList.Add(favoriteMenuItem);

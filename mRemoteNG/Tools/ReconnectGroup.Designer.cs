@@ -98,7 +98,7 @@ namespace mRemoteNG.Tools
             // 
             // pbServerStatus
             // 
-            this.pbServerStatus.Image = global::mRemoteNG.Properties.Resources.HostStatus_Check;
+            this.pbServerStatus.Image = Resources.Properties.Resources.HostStatus_Check;
             this.pbServerStatus.Location = new System.Drawing.Point(99, 23);
             this.pbServerStatus.Name = "pbServerStatus";
             this.pbServerStatus.Size = new System.Drawing.Size(16, 16);

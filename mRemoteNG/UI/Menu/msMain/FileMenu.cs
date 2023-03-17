@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using mRemoteNG.App;
-using mRemoteNG.Connection;
-using mRemoteNG.Properties;
 using mRemoteNG.Security;
 using mRemoteNG.UI.Forms;
 using mRemoteNG.UI.Window;
@@ -61,7 +59,7 @@ namespace mRemoteNG.UI.Menu
             // 
             // mMenFileNew
             // 
-            _mMenFileNew.Image = Properties.Resources.NewFile_16x;
+            _mMenFileNew.Image = Resources.Properties.Resources.NewFile_16x;
             _mMenFileNew.Name = "mMenFileNew";
             _mMenFileLoad.ShortcutKeys = Keys.Control | Keys.N;
             _mMenFileNew.Size = new System.Drawing.Size(281, 22);
@@ -70,7 +68,7 @@ namespace mRemoteNG.UI.Menu
             // 
             // mMenFileLoad
             // 
-            _mMenFileLoad.Image = Properties.Resources.OpenFile_16x;
+            _mMenFileLoad.Image = Resources.Properties.Resources.OpenFile_16x;
             _mMenFileLoad.Name = "mMenFileLoad";
             _mMenFileLoad.ShortcutKeys = Keys.Control | Keys.O;
             _mMenFileLoad.Size = new System.Drawing.Size(281, 22);
@@ -106,7 +104,7 @@ namespace mRemoteNG.UI.Menu
             // 
             // mMenToolsOptions
             // 
-            _mMenToolsOptions.Image = Properties.Resources.Settings_16x;
+            _mMenToolsOptions.Image = Resources.Properties.Resources.Settings_16x;
             _mMenToolsOptions.Name = "mMenToolsOptions";
             _mMenToolsOptions.Size = new System.Drawing.Size(184, 22);
             _mMenToolsOptions.Text = Language.Options;
@@ -114,7 +112,7 @@ namespace mRemoteNG.UI.Menu
             // 
             // mMenFileExit
             // 
-            _mMenFileExit.Image = Properties.Resources.CloseSolution_16x;
+            _mMenFileExit.Image = Resources.Properties.Resources.CloseSolution_16x;
             _mMenFileExit.Name = "mMenFileExit";
             _mMenFileExit.ShortcutKeys = Keys.Alt | Keys.F4;
             _mMenFileExit.Size = new System.Drawing.Size(281, 22);

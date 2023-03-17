@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using Google.Protobuf;
 using mRemoteNG.Resources.Language;
 
 namespace mRemoteNG.Tools
@@ -20,7 +19,7 @@ namespace mRemoteNG.Tools
             get => _ServerReady;
             set
             {
-                SetStatusImage(value ? Properties.Resources.HostStatus_On : Properties.Resources.HostStatus_Off);
+                SetStatusImage(value ? Resources.Properties.Resources.HostStatus_On : Resources.Properties.Resources.HostStatus_Off);
 
                 _ServerReady = value;
             }

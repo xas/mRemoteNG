@@ -31,7 +31,7 @@ namespace mRemoteNG.UI.Window
             WindowType = WindowType.Update;
             DockPnl = panel;
             InitializeComponent();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.RunUpdate_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.RunUpdate_16x);
             FontOverrider.FontOverride(this);
         }
 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Runtime.Versioning;
-using mRemoteNG.Properties;
 using mRemoteNG.Resources.Language;
 
 namespace mRemoteNG.UI.Forms.OptionsPages
@@ -13,7 +12,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
         {
             InitializeComponent();
             ApplyTheme();
-            PageIcon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.StartupProject_16x);
+            PageIcon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.StartupProject_16x);
         }
 
         public override string PageName

@@ -22,7 +22,7 @@
             // pbLogo
             // 
             this.pbLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            this.pbLogo.BackgroundImage = global::mRemoteNG.Properties.Resources.Header_dark;
+            this.pbLogo.BackgroundImage = Resources.Properties.Resources.Header_dark;
             this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pbLogo.Location = new System.Drawing.Point(0, 0);

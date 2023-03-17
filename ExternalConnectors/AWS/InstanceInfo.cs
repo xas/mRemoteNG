@@ -1,5 +1,4 @@
 ﻿using Amazon.EC2.Model;
-using System;
 
 namespace ExternalConnectors.AWS
 {

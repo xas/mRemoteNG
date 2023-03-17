@@ -133,7 +133,7 @@ namespace mRemoteNG.UI.Forms
         public FrmExport()
         {
             InitializeComponent();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.Export_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.Export_16x);
             FontOverrider.FontOverride(this);
             SelectedFolder = null;
             SelectedConnection = null;

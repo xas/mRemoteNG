@@ -1,12 +1,8 @@
-﻿using mRemoteNG.Config;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Dialogs;
-using mRemoteNG.App;
-using mRemoteNG.Config.Connections;
 using mRemoteNG.Config.ACL;
-using mRemoteNG.Security;
 using mRemoteNG.Resources.Language;
 using System.Runtime.Versioning;
 
@@ -23,7 +19,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
             InitializeComponent();
             Check4ACL();
             ApplyTheme();
-            PageIcon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.DocumentsFolder_16x);
+            PageIcon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.DocumentsFolder_16x);
         }
 
         public override string PageName

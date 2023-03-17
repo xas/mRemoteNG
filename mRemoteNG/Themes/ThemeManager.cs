@@ -7,7 +7,6 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using mRemoteNG.Messages;
-using mRemoteNG.Properties;
 using WeifenLuo.WinFormsUI.Docking;
 using System.Runtime.Versioning;
 

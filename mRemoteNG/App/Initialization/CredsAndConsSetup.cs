@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Runtime.Versioning;
 using mRemoteNG.Config.Connections;
-using mRemoteNG.Properties;
 
 namespace mRemoteNG.App.Initialization
 {

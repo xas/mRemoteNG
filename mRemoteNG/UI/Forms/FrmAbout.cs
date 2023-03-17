@@ -4,7 +4,6 @@ using mRemoteNG.App.Info;
 using mRemoteNG.Themes;
 using mRemoteNG.Resources.Language;
 using System.Reflection;
-using mRemoteNG.Properties;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 
@@ -18,7 +17,7 @@ namespace mRemoteNG.UI.Forms
         private frmAbout()
         {
             InitializeComponent();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.UIAboutBox_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(mRemoteNG.Resources.Properties.Resources.UIAboutBox_16x);
             ThemeManager.getInstance().ThemeChanged += ApplyTheme;
             ApplyLanguage();
             ApplyTheme();

@@ -2,7 +2,6 @@
 using mRemoteNG.App;
 using mRemoteNG.Config.Connections.Multiuser;
 using mRemoteNG.Config.DatabaseConnectors;
-using mRemoteNG.Properties;
 using mRemoteNG.Security.SymmetricEncryption;
 using mRemoteNG.Resources.Language;
 using System.Runtime.Versioning;
@@ -18,7 +17,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
         {
             InitializeComponent();
             ApplyTheme();
-            PageIcon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.SQLDatabase_16x);
+            PageIcon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.SQLDatabase_16x);
             _databaseConnectionTester = new DatabaseConnectionTester();
         }
 
@@ -122,7 +121,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
             var password = txtSQLPassword.Text;
 
             lblTestConnectionResults.Text = Language.TestingConnection;
-            imgConnectionStatus.Image = Properties.Resources.Loading_Spinner;
+            imgConnectionStatus.Image = Resources.Properties.Resources.Loading_Spinner;
             btnTestConnection.Enabled = false;
 
             var connectionTestResult =
@@ -164,7 +163,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
 
         private void UpdateConnectionImage(bool connectionSuccess)
         {
-            imgConnectionStatus.Image = connectionSuccess ? Properties.Resources.Test_16x : Properties.Resources.LogError_16x;
+            imgConnectionStatus.Image = connectionSuccess ? Resources.Properties.Resources.Test_16x : Resources.Properties.Resources.LogError_16x;
         }
 
         private string BuildTestFailedMessage(string specificMessage)

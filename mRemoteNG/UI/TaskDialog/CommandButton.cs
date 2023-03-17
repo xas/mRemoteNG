@@ -154,8 +154,8 @@ namespace mRemoteNG.UI.TaskDialog
         protected override void OnCreateControl()
         {
             base.OnCreateControl();
-            imgArrow1 = Properties.Resources.GlyphRight_16x;
-            imgArrow2 = Properties.Resources.GlyphRight_16x;
+            imgArrow1 = Resources.Properties.Resources.GlyphRight_16x;
+            imgArrow2 = Resources.Properties.Resources.GlyphRight_16x;
         }
 
         //--------------------------------------------------------------------------------

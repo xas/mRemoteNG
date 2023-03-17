@@ -92,9 +92,9 @@ namespace mRemoteNG.Tools
 
         public ConnectionInfo ConnectionInfo { get; set; }
 
-        public Icon Icon => File.Exists(FileName) ? MiscTools.GetIconFromFile(FileName) : Properties.Resources.mRemoteNG_Icon;
+        public Icon Icon => File.Exists(FileName) ? MiscTools.GetIconFromFile(FileName) : Resources.Properties.Resources.mRemoteNG_Icon;
 
-        public Image Image => Icon?.ToBitmap() ?? Properties.Resources.mRemoteNG_Icon.ToBitmap();
+        public Image Image => Icon?.ToBitmap() ?? Resources.Properties.Resources.mRemoteNG_Icon.ToBitmap();
 
         #endregion
 

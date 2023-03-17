@@ -15,7 +15,6 @@ using System.IO;
 using System.Security;
 using System.Threading;
 using System.Windows.Forms;
-using mRemoteNG.Properties;
 using mRemoteNG.Resources.Language;
 using System.Runtime.Versioning;
 

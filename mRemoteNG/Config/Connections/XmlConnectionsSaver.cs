@@ -7,7 +7,6 @@ using mRemoteNG.Security;
 using mRemoteNG.Security.Factories;
 using mRemoteNG.Tree;
 using mRemoteNG.Tree.Root;
-using mRemoteNG.Properties;
 using System.Runtime.Versioning;
 
 namespace mRemoteNG.Config.Connections

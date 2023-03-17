@@ -106,7 +106,7 @@ namespace mRemoteNG.UI.Window
             // 
             btnTransfer._mice = MrngButton.MouseState.HOVER;
             btnTransfer.FlatStyle = FlatStyle.Flat;
-            btnTransfer.Image = Properties.Resources.SyncArrow_16x;
+            btnTransfer.Image = Resources.Properties.Resources.SyncArrow_16x;
             btnTransfer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnTransfer.Location = new System.Drawing.Point(562, 145);
             btnTransfer.Name = "btnTransfer";
@@ -351,7 +351,7 @@ namespace mRemoteNG.UI.Window
         {
             ApplyTheme();
             ApplyLanguage();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.SyncArrow_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.SyncArrow_16x);
             var display = new DisplayProperties();
             btnTransfer.Image = display.ScaleImage(btnTransfer.Image);
         }

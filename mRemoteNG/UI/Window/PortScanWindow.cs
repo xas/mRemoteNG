@@ -24,7 +24,7 @@ namespace mRemoteNG.UI.Window
         public PortScanWindow()
         {
             InitializeComponent();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.SearchAndApps_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.SearchAndApps_16x);
             WindowType = WindowType.PortScan;
             DockPnl = new DockContent();
             ApplyTheme();

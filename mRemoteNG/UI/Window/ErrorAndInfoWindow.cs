@@ -34,7 +34,7 @@ namespace mRemoteNG.UI.Window
             DockPnl = panel;
             _display = new DisplayProperties();
             InitializeComponent();
-            Icon = Resources.ImageConverter.GetImageAsIcon(Properties.Resources.StatusInformation_16x);
+            Icon = Resources.ImageConverter.GetImageAsIcon(Resources.Properties.Resources.StatusInformation_16x);
             lblMsgDate.Width = _display.ScaleWidth(lblMsgDate.Width);
             _themeManager = ThemeManager.getInstance();
             ApplyTheme();
@@ -80,10 +80,10 @@ namespace mRemoteNG.UI.Window
         private void FillImageList()
         {
             imgListMC.ImageSize = _display.ScaleSize(imgListMC.ImageSize);
-            imgListMC.Images.Add(_display.ScaleImage(Properties.Resources.Test_16x));
-            imgListMC.Images.Add(_display.ScaleImage(Properties.Resources.StatusInformation_16x));
-            imgListMC.Images.Add(_display.ScaleImage(Properties.Resources.LogWarning_16x));
-            imgListMC.Images.Add(_display.ScaleImage(Properties.Resources.LogError_16x));
+            imgListMC.Images.Add(_display.ScaleImage(Resources.Properties.Resources.Test_16x));
+            imgListMC.Images.Add(_display.ScaleImage(Resources.Properties.Resources.StatusInformation_16x));
+            imgListMC.Images.Add(_display.ScaleImage(Resources.Properties.Resources.LogWarning_16x));
+            imgListMC.Images.Add(_display.ScaleImage(Resources.Properties.Resources.LogError_16x));
         }
 
         private void LayoutVertical()
@@ -222,7 +222,7 @@ namespace mRemoteNG.UI.Window
                 switch (eMsg.Class)
                 {
                     case MessageClass.DebugMsg:
-                        pbError.Image = _display.ScaleImage(Properties.Resources.Test_16x);
+                        pbError.Image = _display.ScaleImage(Resources.Properties.Resources.Test_16x);
                         if (_themeManager.ThemingActive)
                         {
                             pnlErrorMsg.BackColor = Color.LightSteelBlue;
@@ -232,7 +232,7 @@ namespace mRemoteNG.UI.Window
 
                         break;
                     case MessageClass.InformationMsg:
-                        pbError.Image = _display.ScaleImage(Properties.Resources.StatusInformation_16x);
+                        pbError.Image = _display.ScaleImage(Resources.Properties.Resources.StatusInformation_16x);
                         if (_themeManager.ThemingActive)
                         {
                             pnlErrorMsg.BackColor = Color.LightSteelBlue;
@@ -242,7 +242,7 @@ namespace mRemoteNG.UI.Window
 
                         break;
                     case MessageClass.WarningMsg:
-                        pbError.Image = _display.ScaleImage(Properties.Resources.LogWarning_16x);
+                        pbError.Image = _display.ScaleImage(Resources.Properties.Resources.LogWarning_16x);
                         if (_themeManager.ActiveAndExtended)
                         {
                             //Inverse colors for dramatic effect
@@ -262,7 +262,7 @@ namespace mRemoteNG.UI.Window
 
                         break;
                     case MessageClass.ErrorMsg:
-                        pbError.Image = _display.ScaleImage(Properties.Resources.LogError_16x);
+                        pbError.Image = _display.ScaleImage(Resources.Properties.Resources.LogError_16x);
                         if (_themeManager.ActiveAndExtended)
                         {
                             pnlErrorMsg.BackColor =

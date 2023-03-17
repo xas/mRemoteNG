@@ -158,7 +158,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
             // 
             // imgConnectionStatus
             // 
-            imgConnectionStatus.Image = Properties.Resources.F1Help_16x;
+            imgConnectionStatus.Image = Resources.Properties.Resources.F1Help_16x;
             imgConnectionStatus.Location = new System.Drawing.Point(169, 203);
             imgConnectionStatus.Name = "imgConnectionStatus";
             imgConnectionStatus.Size = new System.Drawing.Size(16, 16);

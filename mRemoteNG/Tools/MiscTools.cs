@@ -30,7 +30,7 @@ namespace mRemoteNG.Tools
                                                     "GetIconFromFile failed (Tools.Misc) - using default icon" +
                                                     Environment.NewLine + AEx.Message,
                                                     true);
-                return Properties.Resources.mRemoteNG_Icon;
+                return Resources.Properties.Resources.mRemoteNG_Icon;
             }
             catch (Exception ex)
             {
