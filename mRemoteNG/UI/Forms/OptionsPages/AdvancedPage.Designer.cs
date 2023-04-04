@@ -130,7 +130,7 @@ namespace mRemoteNG.UI.Forms.OptionsPages
             // btnLaunchPutty
             // 
             btnLaunchPutty._mice = MrngButton.MouseState.OUT;
-            btnLaunchPutty.Image = Properties.Resources.PuttyConfig;
+            btnLaunchPutty.Image = Resources.Properties.Resources.PuttyConfig;
             btnLaunchPutty.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnLaunchPutty.Location = new System.Drawing.Point(379, 138);
             btnLaunchPutty.Name = "btnLaunchPutty";
